@@ -13,7 +13,10 @@
   --pale-green:#EBF5DE;
   --off-white:#FEFEFE;
   --color-black:#000000;
+  --ever-green:rgba(57, 65, 18);
+  --light-evergreen:rgb(71, 81, 22);
   --br-sm: 14px;
+  --box-shadow-1:rgba(16, 18, 3, 0.418);
 }
 
 body {
@@ -37,5 +40,81 @@ body {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
+}
+
+.sec2 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.sec3 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.sec4 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.active-btn {
+  border-color: var(--pale-green) !important;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.active-btn i {
+  color: var(--pale-green) !important;
+}
+
+.controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.controls .control {
+  padding: 1rem;
+  cursor: pointer;
+  border-style: solid;
+  border-color: var(--ever-green);
+  width: 55px;
+  height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .7rem 0;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
+}
+
+.controls .control i {
+  font-size: 1.2rem;
+  color: var(--light-evergreen);
 }
 /*# sourceMappingURL=styles.css.map */
