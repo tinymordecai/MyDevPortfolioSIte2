@@ -6,7 +6,36 @@
   list-style: none;
 }
 
+:root {
+  --color-primary: #CAE2AA;
+  --color-olive:#8DAF60;
+  --dark-green:#597E2A;
+  --pale-green:#EBF5DE;
+  --off-white:#FEFEFE;
+  --color-black:#000000;
+  --br-sm: 14px;
+}
+
 body {
-  background-color: red;
+  background-color: var(--color-primary);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--color-black);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.section {
+  -webkit-transform: translateY(100%) scale(0);
+          transform: translateY(100%) scale(0);
+  -webkit-transition: all .4 ease-in-out;
+  transition: all .4 ease-in-out;
+  background-color: var(--color-primary);
+}
+
+.sec1 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
 }
 /*# sourceMappingURL=styles.css.map */

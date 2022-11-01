@@ -5,6 +5,43 @@
     list-style:none;
 }
 
-body{
-    background-color: red;
+:root{
+    --color-primary: #CAE2AA;
+    --color-olive:#8DAF60;
+    --dark-green:#597E2A;
+    --pale-green:#EBF5DE;
+    --off-white:#FEFEFE;
+    --color-black:#000000;
+    --br-sm: 14px;
+}
+
+body {
+    background-color: var(--color-primary);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.1rem;
+    color: var(--color-black);
+    transition: all .4s ease-in-out;
+}
+
+.section{
+    transform: translateY(100%) scale(0);
+    transition: all .4 ease-in-out;
+    background-color: var(--color-primary);    
+}
+
+.sec1{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+.sec2{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+.sec3{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+.sec4{
+    display: none;
+    transform: translateY(0) scale(1);
 }
