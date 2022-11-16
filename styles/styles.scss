@@ -32,22 +32,36 @@ body {
     background-color: var(--color-primary);    
 }
 
+
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(146, 162, 43);
 }
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(106, 118, 29);
 }
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(160, 179, 38);
 }
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(57, 62, 22);
 }
+.sec5{
+    display: none;
+    transform: translateY(0) scale(1);
+    background-color: rgb(200, 229, 11);
+}
+.active{
+    display: block;
+}
+
 //Controls 
 .active-btn{
     border-color:var(--pale-green)!important;
@@ -60,7 +74,7 @@ body {
 .controls{
     position:fixed;
     z-index:10;
-    top: 50%;
+    top: 50%;   
     right:3%;
     display:flex;
     flex-direction: column;
